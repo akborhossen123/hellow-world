@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>login form</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    background-color: antiquewhite;
+    
+}
+.nav-bar h1{
+    display: inline-block;
+    font-size: 50px;
+    width: 300px;
+    height: 70px;
+     text-align: center;
+}
+.nav-bar ul {
+    width: 500px;
+    height: 70px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    float: right;
+    align-items: center;
+}
+.nav-bar ul li {
+    list-style: none;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    padding: 17px;
+    margin: 0 20px;
+    border-radius: 5px;
+    color: black;
+}
+.nav-bar ul li:hover a{
+    background: green;
+    color: white;
+}
+.background-img img{
+    max-width: 100%;
+   height: auto;
+    position: relative;
+}
+.background-img h1{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    color: black;
+}
+/*main container start here*/
+.about h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px;
+}
+.row{
+    width: 90%;
+    margin: auto;
+}
+.row1,row2{
+    width: 100%;
+    display: inline-block;
+}
+.row1 img,.row2 img{
+    width: 24%;
+    position: relative;
+}
+.contact{
+      width: 90%;
+    margin: auto;
+    padding: 10px;
+    background: gray;
+}
+.contact h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 19px;
+}
+.form {
+    width: 50%;
+    margin: auto;
+}
+.form input{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+}
+.form label {
+    margin: 15px;
+    display: inline-block;
+    font-size: 21px;
+}
+input[type="submit"]{
+    width: 200px;
+}
+input[type="reset"]{
+    width: 200px;
+}
+.ponta {
+    margin: 7px 95px;
+}
+footer h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 150px 0 50px 0;
+    position: relative;
+}
+h1::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background-color: aqua;
+    position: absolute;
+    left: 539px;
+    bottom:-20px ;
+    transition: 0.5s;
+}
+.footer-img img{
+    margin-top: 30px;
+}
+h1:hover::after{
+    width: 20%;
+}
+.main-footer{
+    width: 100%;
+    height: 100px;
+    background: black;
+    color: white;  
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+i.fa {
+    width: 69px;
+    font-size: 30px;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <!--navigation section start here-->
+    <div class="nav-bar">
+        <h1>logo</h1>
+        <ul>
+        <li><a href="#">home</a></li> 
+        <li><a href="#about-us">about</a></li>        
+         <li><a href="#contact-me">contact</a></li>    
+         <li><a href="#footer-section">footer</a></li>    
+         </ul>
+    </div>
+         <!--navigation section end here-->
+        
+         <!--main section start here-->
+    <div class="main">
+    <div class="background-img">
+        <img src="image2/wall.jpg"> 
+        <h1>this is my website</h1>
+    </div>
+    <div class="about" id="about-us">
+        <h1>about section</h1>
+        <div class="row">
+            <div class="row1">
+                 <img src="image2/wall1.jpg">
+                <img src="image2/wall2.jpg">
+                <img src="image2/wall3.jpg">
+                <img src="image2/wall4.jpg">
+            </div>
+            <div class="row2">
+                <img src="image2/wall5.jpg">
+                <img src="image2/wall6.jpg">
+                <img src="image2/wall7.jpg">
+                <img src="image2/wall5.jpg">
+            </div>
+        </div>
+        <div class="contact" id="contact-me">
+        <h1>contact me</h1>
+            <div class="form">
+                <label>Enter Your Name:</label>
+            <input type="text" name="" placeholder="username">
+                <label>Enter Your Email:</label>
+            <input type="email" name="" placeholder="email">
+                <label>Enter Your password:</label>
+            <input type="password" name="" placeholder="password">
+               <div class="ponta"> 
+         <input type="submit" value="submit">
+                <input type="reset" value="clear"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+     <!--main section end here-->
+        <footer id="footer-section">
+            <h1>footer section</h1>
+          <div class="footer-img">
+            <img src="image2/street.jpg">
+            </div>
+            <div class="main-footer">
+               <div class="icon">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                   <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                   <i class="fa fa-instagram" aria-hidden="true"></i>
+                   <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
